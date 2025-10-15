@@ -9,7 +9,7 @@ Group=__APP__
 Environment="PATH=__PATH_WITH_NODEJS__"
 Environment="NODE_ENV=production"
 WorkingDirectory=__INSTALL_DIR__/apps/web/
-ExecStart=__NODEJS_DIR__/node start
+ExecStart=__NODEJS_DIR__/node bun run start
 Restart=on-failure
 
 # Sandboxing options to harden security
