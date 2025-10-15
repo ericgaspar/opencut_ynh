@@ -39,13 +39,8 @@ yunohost service add "$app" --description="A short description of the app" --log
 #=================================================
 ynh_script_progression "Installing the app..."
 
-pushd "$install_dir"
-	ynh_hide_warnings npm install bun
-popd
-
 pushd "$install_dir/apps/web"
-ynh_hide_warnings npm install bun
- 	ynh_hide_warnings ynh_exec_as_app bun install
+ 	ynh_hide_warnings ynh_exec_as_app npm install
 popd
 
 #=================================================
