@@ -42,7 +42,7 @@ ynh_script_progression "Installing the app..."
 pushd "$install_dir/apps/web"
 ynh_hide_warnings npm install -g bun
 	ynh_hide_warnings ynh_exec_as_app bun install
-	ynh_hide_warnings ynh_exec_as_app run db:migrate
+	ynh_hide_warnings ynh_exec_as_app bun run db:migrate
 popd
 
 #=================================================
