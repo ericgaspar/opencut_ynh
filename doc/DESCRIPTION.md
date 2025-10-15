@@ -1,1 +1,6 @@
-This is a dummy description of this app features
+### Features
+
+Timeline-based editing
+Multi-track support
+Real-time preview
+No watermarks or subscriptions
